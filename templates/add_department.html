@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/CSS/add_department.css">
+</head>
+<body>
+    <div class="main">
+        <div class="rectangle">
+          <h1>DEPARTMENT</h1>
+          <form method="POST" action="http://127.0.0.1:5000/add">
+            <p>ID: <input type="number" name="id"  required></p>
+            <p>DEPARTMENT: <input type="text" name="name" required></p>
+            <div class="button">
+              <button type="submit">ADD</button>
+              <button type="reset">Cancel</button>
+            </div>
+          </form>
+           <!-- {% if result=="success" %}
+           <script>alert("record inserted")</script>
+           {% else %}
+           
+           {% endif %} -->
+        </div>
+      </div>
+</body>
+<script>
+
+</script>
+</html>

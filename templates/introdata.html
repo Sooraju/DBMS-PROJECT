@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/CSS/introdata.css"> 
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <nav> 
+            <ul >
+                <li><p><button id="add-button" class="button">ADD</button></p></li>
+                <li><p><button id="update-button" class="button">UPDATE</button></p></li>
+                <li><p><button id="delete-button" class="button">DELETE</button></p></li>
+                <li><p><a href="{{ url_for('home') }}">HOME</a></p></li>
+            </ul>
+            <div id="popup">
+                <p>Choose Field</p>
+                <ul id="options">
+                    <li><form action="http://127.0.0.1:5000/add_department" method="POST">
+                        <button type="submit">DEPARTMENT</button>
+                    </form></li>
+                    <li><form action="http://127.0.0.1:5000/add_employee" method="POST">
+                        <button class="option2">EMPLOYEE</button>
+                    </form></li>
+                </ul>
+        </div>
+        <div id="popup1">
+            <p>Choose Field To Update</p>
+            <ul id="options">
+                <li><form action="http://127.0.0.1:5000/update_data" method="POST">
+                    <button type="submit">DEPARTMENT</button>
+                </form></li>
+                <li><form action="http://127.0.0.1:5000/updateemp_data">
+                    <button class="option2">EMPLOYEE</button>
+                </form></li>
+            </ul>
+    </div>
+    <div id="popup2">
+        <p>Choose Field To DELETE</p>
+        <ul id="options">
+            <li><form action="http://127.0.0.1:5000/deletedepartment_data" method="POST">
+                <button type="submit">DEPARTMENT</button>
+            </form></li>
+            <li><form action="http://127.0.0.1:5000/deleteemploye_data">
+                <button class="option2">EMPLOYEE</button>
+            </form></li>
+        </ul>
+</div>
+</div>
+</nav>
+    </header>
+    <div class="container">
+        <div class="tablecon">
+    <table>
+        <caption>DEPARTMENT TABLE</caption>
+        <tr>
+            <th>ID</th>
+            <th>DEPARTMENT</th>
+        </tr>
+        <tbody>
+        {% for i in range(lent) %}
+        <tr>
+            <td>{{ info[i][0]}}</td>
+            <td>{{ info[i][1]}}</td>
+        </tr>
+        {% endfor %}
+         </tbody>
+    </table>
+    </div>
+    <div class="tablecon">
+        <table>
+            <caption>EMPLOYEE TABLE</caption>
+            <tr>
+                <th>NAME</th>
+                <th>SALARY</th>
+                <th>DEPARTMENT</th>
+            </tr>
+            <tbody>
+            {% for i in range(lent1) %}
+            <tr>
+                <td>{{ info1[i][0]}}</td>
+                <td>{{ info1[i][1]}}</td>
+                <td>{{ info1[i][2]}}</td>
+            </tr>
+            {% endfor %}
+             </tbody>
+        </table>
+        </div>
+</div>
+<script >
+const addButton = document.getElementById('add-button');
+const updatebutton = document.getElementById('update-button');
+const deletebutton=document.getElementById('delete-button');
+const popup = document.getElementById('popup');
+const popup1 = document.getElementById('popup1');
+const popup2=document.getElementById('popup2');
+// const department=document.getElementById('option1')
+
+addButton.addEventListener('click', function() {
+    popup.style.display = "block"; // Make the popup visible
+});
+updatebutton.addEventListener('click', function() {
+    popup1.style.display = "block"; // Make the popup visible
+});
+deletebutton.addEventListener('click',function(){
+    popup2.style.display="block"
+})
+
+// Optionally, add a click event listener to the document to close the popup when clicked outside
+document.addEventListener('click', function(event) {
+    if (event.target !== addButton && event.target !== popup) {
+        popup.style.display = "none";
+       
+    }
+});
+document.addEventListener('click', function(event) {
+    if(event.target !== updatebutton && event.target !== popup1){
+        popup1.style.display="none";
+    }})
+document.addEventListener('click',function(event){
+    if(event.target !==deletebutton&& event.target !== popup2){
+        popup2.style.display="none";
+    }
+})
+
+</script>   
+</body>
+</html>

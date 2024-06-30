@@ -1,0 +1,85 @@
+.rectangle{
+    height: 300px;
+    width: 300px;
+    /* padding: px; */
+    flex-direction: column;  
+    border: solid #ccc;
+    border-radius: 1cap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap;
+    overflow: auto; */
+    /* p {
+        margin: 9px; 
+    } */
+    
+   
+}
+.buttonsubreset{
+    /* padding: 4px; */
+    margin:0px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 75px;
+    height:30px;
+   flex-wrap: wrap;
+    button{
+        /* margin-left: 40px; */
+        border: solid #ccc;
+        border-radius: 1cap; 
+        font-weight:600;
+         height: 30px;
+
+    }
+}
+h1{
+  margin:0px;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items:center; 
+}
+.rectangle input{
+  margin-top: 6px;
+  padding: 0;
+  border-radius: 5px;
+  height: 30px;
+  font: 1em sans-serif;
+  border:solid #ccc; 
+}
+.inputusername:focus{
+  border-color: #4A90E2;
+  outline:none;
+}
+.secrowbutton{
+  /* border: solid black; */
+  margin-top:5px;
+  margin-bottom: 0px;
+  padding: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+    height:25px;
+    button{
+        border: solid #ccc;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 4px;
+        width:100px;
+        height: 30px;
+        font-weight:600;
+        /* border-radius: 1cap; */
+        margin-right: 15px;
+    }
+}

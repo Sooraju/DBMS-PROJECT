@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head> 
+<body>
+    <div class="main">
+    <div class="rectangle">
+        <p >Name : <input type="text" style="text-transform: uppercase;" ></p>
+        <p>Password : <input type="password"></p>
+        <div class="button">
+        <a href="introdata.html"><button id="logbutton"><h>login</h></button></a>
+        <button id="logcancel"><h>cancel</h></button>
+        </div>
+    </div>
+</div>
+    <script src="login.js"></script>
+</div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../static/CSS/updateempconferm.css">
+  <!-- <link rel="stylesheet" href="{{url_for('static',filename='CSS/login.css')}}"> -->
+</head>
+<body>
+  <div class="main">
+    <div class="rectangle">
+      <h1>UPDATE</h1>
+      <form method="POST" action="http://127.0.0.1:5000/updateempdata/{{ empname }}">
+        <p>DEPARTMENT: <p><input type="text" name="DEPT" required></p></p>
+        <p>NAME:  <p><input type="text" name="name" required></p></p>
+        <P>SALARY:  <p><input type="number" name="salary" required></P></p>
+        <div class="button">
+          <button type="submit">UPDATE</button>
+          <button type="reset">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

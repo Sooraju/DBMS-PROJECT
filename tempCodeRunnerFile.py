@@ -1,0 +1,1 @@
+ con.execute("INSERT INTO DEPARTMENT (ID,NAME) VALUES (?, ?)", (id, name))

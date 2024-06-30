@@ -1,0 +1,61 @@
+.rectangle{
+    height: 200px;
+    width: 300px;
+    padding: 6px;
+    margin: auto;
+    flex-direction: column;  
+    border: solid gray;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    p {
+        margin: 9px; 
+    }
+    
+   
+}
+.button{
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+    height:px;
+    button{
+        margin-right: 30px;
+    }
+}
+#logcancel{
+    margin-left: 10px;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items:center; 
+}
+.rectangle input{
+  margin: 0;
+  padding: 0;
+}
+#submitbut{
+    width:90px;
+    height: 40px;
+    border-radius: 5px;
+}
+#inputidup{
+    height:30px;
+    width:60%;
+    font: 1em sans-serif;
+}
+#pfont{
+    font-size: x-large;
+}
+.updateid{
+    background-color: violet;
+    width: 60%;
+    border: solid ;
+    border-radius: 2cap;
+    padding: 10px;
+}

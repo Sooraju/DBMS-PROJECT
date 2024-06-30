@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/CSS/add_employee.css">
+</head>
+<body>
+    <div class="main">
+        <div class="rectangle">
+          <h1>EMPLOYEE</h1>
+          <form method="POST" action="http://127.0.0.1:5000/add_employee_adddatabase">
+            <p>DEPARTMENT: 
+               <p><input type="text" name="department"  required></p>
+            </p>
+            <p>NAME: 
+              <p><input type="text" name="name" required></p>
+            </p>
+            <p>SALARY: 
+              <p><input type="number" name="salary" required></p>
+            </p>
+            <div class="button">
+              <button type="submit">ADD</button>
+              <button type="reset">Cancel</button>
+            </div>
+          </form>
+           <!-- {% if result=="success" %}
+           <script>alert("record inserted")</script>
+           {% else %}
+           <script>alert("department does not exist")</script>
+           {% endif %} -->
+        </div>
+      </div>
+</body>
+<script>
+</script>
+</html>

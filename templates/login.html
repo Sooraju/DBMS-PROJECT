@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+  <link rel="stylesheet" href="../static/CSS/login.css">
+</head>
+<body>
+  <div class="main">
+    <div class="rectangle">
+      <h1>Login</h1>
+      <div>
+      <form method="POST" action="http://127.0.0.1:5000/login">
+        <p class="formp">Username: <input type="text" name="username" class="inputusername" required></p>
+        <p class="formp">Password: <input type="password" name="password" class="inputusername" required></p>
+      </div>
+        <div class="buttonsubreset">
+          <button type="submit">Login</button>
+          <button type="reset">Cancel</button>
+        </div>
+        <div class="secrowbutton">
+          <button type="register" id="regbutton">REGISTER</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+        const regbutton=document.getElementById('regbutton');
+        regbutton.addEventListener('click',function(){
+                 window.location.href='http://127.0.0.1:5500/dbnsproject/templates/register.html'
+        });
+  </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+body{
+    margin:0;
+    background: #222;
+    font-family: 'Work Sans',sans-serif;
+    font-weight: 400;
+    color: #f00;
+}
+header{
+      background: #55d6aa;
+}
+header::after{
+    content: '';
+    display: table;
+    clear:both;
+
+}
+nav{
+    float:right;
+}
+.nav{
+    width:80%;
+    margin:0 auto;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    
+}
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top:20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+nav p{
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+nav p:hover{
+    color:#000;
+}
+nav p::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width:100%;
+    background-color: #444;
+    position: absolute;
+    top:0; 
+    width:0%;
+    transition:all ease-in-out 250ms;
+}
+nav p:hover::before{
+    width: 100%;
+}
+#popup {
+            display: none;  
+            position: absolute;
+            background-color: white;
+            border: 1px solid black;
+            padding: 5px;
+            margin-top: 2px;
+            z-index: 9; 
+        }
+#popup1 {
+            display: none;  
+            position: absolute;
+            background-color: white;
+            border: 1px solid black;
+            padding: 5px;
+            margin-top: 2px;
+            z-index: 9; 
+        }
+#popup2 {
+            display: none;  
+            position: absolute;
+            background-color: white;
+            border: 1px solid black;
+            padding: 5px;
+            margin-top: 2px;
+            z-index: 9; 
+        }
+.button{
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  text-align: inherit;
+  text-decoration: none;
+  cursor: pointer; 
+  outline: none; 
+}
+#options li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    color: white; /* New line to set font color for headers */
+    font-weight: bold;
+}
+
+
+caption {
+    padding: 10px;
+    caption-side: top;
+    font-weight: bold;
+}
+.container{
+    /* background-color: #ddd; */
+    display: flex;
+    flex-direction: column;
+    border-color: white;
+    justify-content: center;
+    align-items: center;
+}
+.tablecon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+}
